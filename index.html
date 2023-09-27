@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- incluindo favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Incluindo estilos externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Monster</title>
+</head>
+<body>
+    <!-- início da header -->
+    <header id="topo">
+        <nav class="navigation">
+            <div class="img-logo">
+                <a href="index.html" class="logo"><img src="img/monster-energy-logo.png" alt="logo"></a>
+            </div>
+            <!-- Lista de navegação -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#topo">Início</a></li>
+                <li class="nav-item"><a href="#produtos">Nossos Produtos</a></li>
+                <li class="nav-item"><a href="#faq">FAQ</a></li>
+            </ul>
+            <!-- menu hamburguer -->
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- fim da header -->
+
+    <!-- início do main -->
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">MONSTER ENERGY</h4>
+                <h1 class="text-h1">Unleash the Beast!</h1>
+                <p>Surpreenda-se com a lata do energético mais animal do planeta. Com duas vezes mais energia do que uma bebida energética regular. </p>
+                <a href="#" class="home-btn">Experimente</a>
+            </div>
+            <div class="home-img">
+                <img src= "img/energy-removebg-preview.png" alt="Monster">
+            </div>
+        </section>
+    </main>
+    <!-- fim do main -->
+
+<!-- início dos cards de produtos -->
+    <div class="container" id="produtos">
+        <h2 class=" h2-text text-center">Nossos Produtos</h2>
+        <div class="row justify-content-center g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card bg-black" >
+              <img src="img/image1.png" class="card-img-top" alt="monster 1">
+              <div class="card-body">
+                <h5 class="card-title"> Dragon Ice Tea Pêssego</h5>
+                <p class="card-text">Sem gás e com leve toque de pêssego. Inspirado em tradições chinesas milenares.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card bg-black">
+              <img src="img/image2.png" class="card-img-top" alt="monster 2">
+              <div class="card-body">
+                <h5 class="card-title">Absolutely Zero</h5>
+                <p class="card-text">Traz o mesmo sabor e o mesmo punch energético do original, com menos calorias e sem açúcares.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card bg-black">
+              <img src="img/image3.png" class="card-img-top" alt="monster 3">
+              <div class="card-body">
+                <h5 class="card-title">Ultra Violet</h5>
+                <p class="card-text">Onde o psicodélico, glamour, heavy metal e rock se misturaram em uma harmonia única.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card bg-black">
+              <img src="img/image4.png" class="card-img-top" alt="monster 4">
+              <div class="card-body">
+                <h5 class="card-title">Ultra Paradise</h5>
+                <p class="card-text">Puro, refrescante e revigorante como os sabores da ilha. O paraíso está logo ali!</p>
+              </div>
+            </div>
+          </div>  
+      </div>
+    </div>
+    <!-- fim dos cards de produtos -->
+
+    <!-- iniciando o FAQ -->
+    <section id="faq" class="perguntas-frequentes">
+        <h3 class="h3-text text-left">Perguntas Frequentes</h3>
+        <!-- Lista de perguntas frequentes-->
+        <div class="accordion accordion-flush w-90" id="accordionFlushExample">
+            <!-- Pergunta 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Quanto açúcar há em uma lata de Monster Energy original?
+                </button>
+              </h2>
+              <!-- Resposta da Pergunta 1 -->
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Uma lata de Monster Energy original geralmente contém cerca de 54 gramas de açúcar. </div>
+              </div>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Qual é a quantidade de cafeína em uma lata de Monster Ultra?
+                </button>
+              </h2>
+              <!-- Resposta da Pergunta 2 -->
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Uma lata de Monster Ultra normalmente contém cerca de 140 miligramas de cafeína.</div>
+              </div>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Os energéticos Monster são seguros para consumo por crianças?
+                </button>
+              </h2>
+              <!-- Resposta da Pergunta 3 -->
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Não, os energéticos Monster não são recomendados para crianças devido ao seu teor de cafeína e outros ingredientes estimulantes.</div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- fim do FAQ -->
+
+    <!-- inicio do footer -->
+    <footer>
+        <div class="footer-content">
+            <div id="contacts">
+                <!-- Texto do rodapé -->
+                <p>Unleash the Beast!</p>
+
+                <!-- social links -->
+                <div id="social_links">
+                    <a href="https://www.instagram.com/monsterenergy/?hl=pt-br" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/MonsterEnergy/?locale=pt_BR" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://br.linkedin.com/company/monsterenergy" class="footer-link" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Lista de links-->
+            <ul class="footer-list">
+                <li>
+                    <h3>Mapa do Site</h3>
+                </li>
+                <li>
+                    <a href="#topo" class="footer-link">Início</a>
+                </li>
+                <li>
+                    <a href="#produtos" class="footer-link">Nossos Produtos</a>
+                </li>
+                <li>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                </li>
+            </ul>
+            
+            <!-- Lista de links do blog-->
+            <ul class="footer-list">
+                <li>
+                    <h3>Nos conheça</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Carreiras</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">A Empresa</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Política de Privacidade</a>
+                </li>
+            </ul>
+
+            <!-- Inscrição -->
+            <div id="subscribe">
+                <p>
+                    Insira seu e-mail para receber novidades!
+                </p>
+
+                <div id="input">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direitos autorais-->
+        <div class="copyright">
+            Monster Energy  ©
+            2023 todos direitos reservados
+        </div>
+    </footer>
+    <!-- fim do footer -->
+    
+    <!-- Chamada para o arquivo Js -->
+    <script src="script.js"></script>
+    <!-- Chamada para o arquivo Js do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

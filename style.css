@@ -1,0 +1,480 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
+
+/* Configuração de scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilização da barra de navegação no topo */
+#topo {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo universal para elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kadwa', serif;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+/* Estilo universais para o body */
+body {
+    color: #1e1c2a;
+    background: rgb(12, 12, 12);
+}
+
+/* Estilização da barra de navegação */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 32px;
+    box-shadow: 0 0.1rem 0.5rem #686767;
+    width: 100%;
+    background: rgb(10, 10, 10);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+/* Estilo do logotipo */
+.navigation .logo {
+    color: #95D600;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* Estilização do logotipo  */
+.img-logo {
+    width: 400px;
+    height: 100px;
+}
+
+.img-logo img {
+    display: block;
+    width: 190px;
+    height: 85px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+/* Estilização da lista de navegação */
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* Estilos dos links da lista de navegação */
+.navigation ul li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+/* Efeito hover para os links de navegação */
+.navigation ul li a:hover {
+    color: #95D600;
+}
+
+/* menu hamburguer */
+.navigation i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Estilos do menu responsivo */
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos das barras do menu responsivo*/
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: #1e1c2a;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+/* Cores das barras do menu responsivo quando ativo */
+.menu .bar {
+    background: #95D600;
+}
+
+/* Estilos para a seção inicial home */
+.home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7%;
+    padding-bottom: 10%;
+    padding-top: 9%;
+    margin-bottom: 3%;
+}
+
+/* Estilos para o texto na seção home */
+.home-text {
+    max-width: 37rem;
+}
+
+/* Estilo do subtítulo na seção home */
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: #95D600;
+    margin-bottom: 1rem;
+}
+
+/* Estilo do título na seção home */
+.home-text .text-h1 {
+    font-size: 3.7rem;
+    margin-bottom: 1rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+/* Estilo do parágrafo na seção home */
+.home-text p {
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+/* Estilo do botão na seção home*/
+.home-btn {
+    padding: 8px 28px;
+    background: #95D600;
+    color: rgb(10, 10, 10);
+    border-radius: 20px;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+/* Efeito hover para o botão na seção home*/
+.home-btn:hover {
+    background-color: #b3ff01;
+}
+
+/* Estilos para a imagem na seção home */
+.home-img {
+    width: 583px;
+    height: 554px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilização dos títulos dos cards de produtos */
+.card-title {
+    color: #95D600;
+}
+
+/* Estilização do texto dos cards de produtos */
+.card-text {
+    color: white;
+}
+
+/* Estilos para o título principal na seção de produtos */
+.h2-text {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card{
+    box-shadow: 0 0.1rem 0.5rem #686767;
+}
+
+/* Estilos para a seção de perguntas frequentes */
+.h3-text {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.perguntas-frequentes {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding: 100px 5%;
+    position: relative;
+    z-index: 0;
+}
+
+/* Estilização dos botões de acordeão nas perguntas frequentes */
+.accordion-button {
+    background-color: black;
+    color: #95D600;
+}
+
+/* Estilização dos botões de acordeão quando expandidos */
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #95D600;
+}
+
+/* Estilos para a seção do rodapé */
+footer {
+    width: 100%;
+    color: white;
+    box-shadow: 0 0.1rem 0.5rem #686767;
+}
+
+/* Estilização dos links no rodapé */
+.footer-link {
+    text-decoration: none;
+}
+
+/* Estilos para o conteúdo do rodapé */
+.footer-content {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+/* Estilização dos ícones de mídia social no rodapé */
+#social_links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* Estilização para o cabeçalho de contatos no rodapé */
+#contacts {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* Estilos dos ícones de mídia social no rodapé */
+#social_links .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: black;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+/* Tamanhos e estilos dos ícones de mídia social */
+#social_links .footer-link i {
+    font-size: 1.25rem;
+}
+
+/* Estilo para o ícone do Instagram no rodapé */
+#instagram {
+    background: #95D600;
+}
+
+/* Estilo para o ícone do Facebook no rodapé */
+#facebook {
+    background-color: #95D600;
+}
+
+/* Estilo para o ícone do LinkedIn no rodapé */
+#linkedin {
+    background-color: #95D600;
+}
+
+/* Estilização das listas no rodapé */
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+/* Estilos para os links nas listas do rodapé */
+.footer-list .footer-link {
+    color: white;
+    transition: all 0.4s;
+}
+
+/* Efeito hover para os links nas listas do rodapé */
+.footer-list .footer-link:hover {
+    color: #95D600;
+}
+
+/* Estilização do formulário de inscrição*/
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Estilo para o texto no formulário */
+#subscribe p {
+    color: white;
+}
+
+/* Estilização do grupo de entrada de dados no formulário*/
+#input {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+}
+
+/* Estilos para a entrada de e-mail no formulário*/
+#input input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+/* Estilo para o botão no formulário */
+#input button {
+    background-color: #95D600;
+    border: none;
+    color: black;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Efeito hover para o botão no formulário */
+#input button:hover {
+    background-color: #b3ff01;
+}
+
+/* Estilo para o texto de direitos autorais*/
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .navigation {
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+
+    /* Estilo do menu hamburguer quando ativo */
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Estilização do menu de navegação */
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: rgb(10, 10, 10);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    /* Estilo do menu de navegação quando ativo */
+    .nav-menu.ativo {
+        right: 0;
+        color: #1e1c2a;
+    }
+
+    /* Espaçamento entre itens de navegação  */
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    /* Estilos para a seção home */
+    .home {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 2rem;
+        padding-top: 32%;
+    }
+
+    .home .text-h4 {
+        font-size: 15px;
+    }
+
+    .home .text-h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    /* Estilos para a imagem na seção home */
+    .home-img {
+        width: 120%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-img img {
+        object-fit: cover;
+    }
+
+    /* Estilização do logotipo  */
+    .img-logo {
+        width: 270px;
+        height: 70px;
+    }
+
+    .img-logo img {
+        display: block;
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Espaçamento entre itens de navegação  */
+    .navigation ul {
+        gap: 1rem;
+    }
+
+    /* Estilização do conteúdo do rodapé  */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Responsividade para telas menores (máximo 426px) */
+@media screen and (max-width: 426px) {
+    /* Layout de 1 coluna para o conteúdo do rodapé */
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
